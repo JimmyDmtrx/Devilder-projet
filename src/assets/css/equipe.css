@@ -1,0 +1,62 @@
+.equipe-container {
+    border: 2px solid blue;
+    margin: 20px 0;
+    padding: 40px 0;
+}
+.profil-1{
+    border: 2px solid orange;
+    display: flex;
+    margin-bottom: 100px;
+    
+}
+.photo-container1{
+    border: 2px solid salmon;
+    width: 1500px;
+    max-width: 100%;
+    display: flex;
+    
+}
+.profil-2{
+    border: 2px solid orange;
+    display: flex;
+    
+}
+.photo-container2{
+    border: 2px solid salmon;
+    width: 1220px;
+    max-width: 100%;
+    display: flex;
+    
+}
+.name-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.ed-pic {
+    max-width: 100%;
+    width: 500px;
+    object-fit: contain;
+    
+    
+}
+h1 { 
+    color: #333333; 
+    font-family: 'Bitter',serif;
+      font-size: 50px;
+       font-weight: normal;
+        line-height: 54px;
+         margin: 0 0 30px; 
+}
+
+p { 
+    color: #333333;
+     font-family: Georgia, serif;
+      font-size: 18px;
+       line-height: 28px;
+        margin: 0 0 15px; }
+
+.under-name{
+    font-size: 26px; line-height: 36px; margin: 0 0 28px;
+}

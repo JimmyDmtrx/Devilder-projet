@@ -1,0 +1,15 @@
+.header-container {
+    border: 2px solid orange;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.elem-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid green;
+    width: 80%;
+    
+}

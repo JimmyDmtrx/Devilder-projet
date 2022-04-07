@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
+// import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
 
 import "../assets/css/contact.css";
 
-const Map = () => {
-  return (
-    <GoogleMap
-      defaultZoom={10}
-      defaultCenter={{ lat: 48.879486, lng: 2.351004 }}
-    />
-  );
-};
-const WrappedMap = withScriptjs(withGoogleMap(Map));
-console.log("process = ", process.env.REACT_APP_GOOGLE_KEY);
+// const Map = () => {
+//   return (
+//     <GoogleMap
+//       defaultZoom={10}
+//       defaultCenter={{ lat: 48.879486, lng: 2.351004 }}
+//     />
+//   );
+// };
+// const WrappedMap = withScriptjs(withGoogleMap(Map));
+// console.log("process = ", process.env.REACT_APP_GOOGLE_KEY);
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

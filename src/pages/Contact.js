@@ -12,20 +12,20 @@ const Map = () => {
   );
 };
 const WrappedMap = withScriptjs(withGoogleMap(Map));
-
+console.log("process = ", process.env.REACT_APP_GOOGLE_KEY);
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   //map
-  const [viewPort, setViewPort] = useState({
-    latitude: 48.879486,
-    longitude: 2.351004,
-    zoom: 10,
-    width: "100%",
-    height: "100%",
-  });
+  // const [viewPort, setViewPort] = useState({
+  //   latitude: 48.879486,
+  //   longitude: 2.351004,
+  //   zoom: 10,
+  //   width: "100%",
+  //   height: "100%",
+  // });
 
   return (
     <div>
@@ -75,7 +75,7 @@ const Contact = () => {
           <input className="button-form" type="submit" value={"Valider"} />
         </form>
       </div>
-      <div>
+      {/* <div>
         <h1>Localisation du cabinet</h1>
         <div style={{ height: "500px", width: "500px" }}>
           <WrappedMap
@@ -84,14 +84,14 @@ const Contact = () => {
             containerElement={<div style={{ height: `100%` }} />}
             mapElement={<div style={{ height: `100%` }} />}
           />
-        </div>
-        <div>
-          <span>adresse</span>
-          <span>numéro</span>
-          <span>mail</span>
-        </div>
+        </div> */}
+      <div>
+        <span>adresse</span>
+        <span>numéro</span>
+        <span>mail</span>
       </div>
     </div>
+    // </div>
   );
 };
 

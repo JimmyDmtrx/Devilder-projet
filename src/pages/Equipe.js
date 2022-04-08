@@ -8,7 +8,7 @@ const Equipe = () => {
       <h1 className="title1-home"> Notre Equipe</h1>
       <div className="profil-1">
         <div className="photo-container1">
-          <img className="ed-pic" src={EdPic} alt="picture" />
+          <img className="ed-pic" src={EdPic} alt="devilder" />
         </div>
         <div>
           <div className="name-status">
@@ -91,7 +91,7 @@ const Equipe = () => {
           </div>
         </div>
         <div className="photo-container2">
-          <img className="ed-pic" src={CecPic} alt="picture" />
+          <img className="ed-pic" src={CecPic} alt="trovato" />
         </div>
       </div>
     </div>

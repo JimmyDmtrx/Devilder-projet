@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 // import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
 
 import "../assets/css/contact.css";
@@ -18,6 +19,11 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  // };
+
   //map
   // const [viewPort, setViewPort] = useState({
   //   latitude: 48.879486,
@@ -42,7 +48,9 @@ const Contact = () => {
         </div>
       </div>
       <div className="form-container">
-        <form>
+        <form
+        //  onSubmit={handleSubmit}
+        >
           <input
             className="input-form"
             value={name}

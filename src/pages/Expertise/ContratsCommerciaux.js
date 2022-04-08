@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../../assets/css/pageExpertise.css";
 import Contrats from "../../components/Contratscommerciaux/Contrats";
 import ContratsIT from "../../components/Contratscommerciaux/ContratsIT";
 import RelationsCommerciales from "../../components/Contratscommerciaux/GestionRelation";
@@ -12,9 +13,9 @@ const ContratsCommerciaux = () => {
 
   return (
     <section>
-      <h1>Contrats commerciaux</h1>
-      <div>
-        <div>
+      <h1 className="title-page-exp">Contrats commerciaux</h1>
+      <div className="div-page-exp">
+        <div className="div-left-page-exp">
           <p
             onClick={() => {
               setVisible1(true);

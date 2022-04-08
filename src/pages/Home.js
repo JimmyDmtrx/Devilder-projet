@@ -3,7 +3,7 @@ import PicHome from "../assets/img/TC-Paris.jpeg";
 
 const Home = () => {
   return (
-    <section>
+    <section className="home">
       <div className="home-photo-container">
         <img className="home-pic" src={PicHome} alt="homepic" />
       </div>

@@ -10,7 +10,7 @@ const Contentieuxcommercial = () => {
           <li>
             Contentieux relatifs aux litiges commerciaux de tout type : retards
             de paiements, inexécution des clauses du contrat, pratiques
-            déloyales, rupture des pourparlers, rupture du contrat, etc. ;
+            déloyales, rupture des pourparlers, rupture du contrat, etc ;
           </li>
           <li>
             Contentieux relatif à la concurrence déloyale : parasitisme,
@@ -20,7 +20,7 @@ const Contentieuxcommercial = () => {
           <li>
             Contentieux de la distribution : rupture de relations commerciales,
             pratiques anti-concurrentielles ou discriminatoires, discorde avec
-            les franchisés et le réseau de distribution.
+            les franchisés et le réseau de distribution;
           </li>
           <li>Contentieux de la cession de fonds de commerce ;</li>
           <li>

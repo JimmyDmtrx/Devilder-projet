@@ -5,7 +5,7 @@
 .input-form {
     border: none;
     flex-direction: column;
-    border-bottom: 3px solid lightgrey;
+    border-bottom: 3px solid #D68627;
     height: 35px;
     width: 500px;
     margin-bottom: 20px;
@@ -15,7 +15,7 @@
   }
   .input-form-area{
     border: none;
-    border-bottom: 3px solid lightgrey;
+    border-bottom: 3px solid #D68627;
     height: 150px;
     width: 90vw;
     margin-bottom: 20px;

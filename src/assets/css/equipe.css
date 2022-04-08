@@ -42,7 +42,7 @@
     
 }
 .title1-home { 
-    color: #111;
+    color: #D68627;
     
     font-size: 2.5rem;
     font-weight: normal;
@@ -56,10 +56,10 @@
 
 p { 
     color: #333333;
-     
-      font-size: 1.2rem;
-       line-height: 28px;
-        margin: 0 0 15px; }
+    font-size: 1.2rem;
+    line-height: 28px;
+    margin: 0 0 15px;
+ }
 
 .under-name{
     font-size: 26px; line-height: 36px; margin: 0 0 28px;

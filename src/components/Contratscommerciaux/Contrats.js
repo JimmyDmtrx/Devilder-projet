@@ -1,7 +1,9 @@
+import "../../assets/css/compExpertise.css";
+
 const Contrats = () => {
   return (
     <section>
-      <div>
+      <div className="container-comp">
         <ul>
           <li>Analyse des besoins et des possibilités juridiques;</li>
           <li>Conseil et élaboration des différents schémas contractuels ;</li>
@@ -12,7 +14,7 @@ const Contrats = () => {
           <li>
             Élaboration de la documentation juridique pré-contractuelle :
             memorandum of understanding (MOU), letter of intent (LOI), term
-            sheets, contrat de confidentialité{" "}
+            sheets, contrat de confidentialité ;
           </li>
           <li>
             Négociations, rédaction et revue de contrats d’affaires tout type :

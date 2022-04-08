@@ -15,53 +15,49 @@ const Concurrence = () => {
       <h1 className="title-page-exp">Concurrence</h1>
       <div className="div-page-exp">
         <div className="div-left-page-exp">
-          <div className="list-left-exp">
-            <p
-              onClick={() => {
-                setVisible1(true);
-                setVisible2(false);
-                setVisible3(false);
-                setVisible4(false);
-              }}
-            >
-              Contrôle des concentrations
-            </p>
+          <div
+            onClick={() => {
+              setVisible1(true);
+              setVisible2(false);
+              setVisible3(false);
+              setVisible4(false);
+            }}
+            className="list-left-exp"
+          >
+            <p>Contrôle des concentrations</p>
           </div>
-          <div className="list-left-exp">
-            <p
-              onClick={() => {
-                setVisible1(false);
-                setVisible2(true);
-                setVisible3(false);
-                setVisible4(false);
-              }}
-            >
-              Pratiques anti-concurrentielles
-            </p>
+          <div
+            onClick={() => {
+              setVisible1(false);
+              setVisible2(true);
+              setVisible3(false);
+              setVisible4(false);
+            }}
+            className="list-left-exp"
+          >
+            <p>Pratiques anti-concurrentielles</p>
           </div>
-          <div className="list-left-exp">
-            <p
-              onClick={() => {
-                setVisible1(false);
-                setVisible2(false);
-                setVisible3(true);
-                setVisible4(false);
-              }}
-            >
-              Compliance
-            </p>
+          <div
+            onClick={() => {
+              setVisible1(false);
+              setVisible2(false);
+              setVisible3(true);
+              setVisible4(false);
+            }}
+            className="list-left-exp"
+          >
+            <p>Compliance</p>
           </div>
-          <div className="list-left-exp">
-            <p
-              onClick={() => {
-                setVisible1(false);
-                setVisible2(false);
-                setVisible3(false);
-                setVisible4(true);
-              }}
-            >
-              Contentieux
-            </p>
+          <div
+            onClick={() => {
+              setVisible1(false);
+              setVisible2(false);
+              setVisible3(false);
+              setVisible4(true);
+            }}
+            className="list-left-exp"
+          >
+            <p>Contentieux</p>
           </div>
         </div>
         <div className="border-limit"></div>

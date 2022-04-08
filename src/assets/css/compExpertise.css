@@ -1,0 +1,12 @@
+.container-comp {
+    text-justify: auto;
+    text-justify: inter-word;
+}
+li {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding : 15px;
+    letter-spacing: .05rem;
+    transition: 0.2s all ease;
+    
+}

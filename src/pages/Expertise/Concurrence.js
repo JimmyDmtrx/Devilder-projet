@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../../assets/css/pageExpertise.css";
 import AntiConcu from "../../components/Concurrence/AntiConcu";
 import Compliance from "../../components/Concurrence/Compliance";
 import ContentieuxConcu from "../../components/Concurrence/ContentieuxConcu";
@@ -11,51 +12,60 @@ const Concurrence = () => {
   const [visible4, setVisible4] = useState(false);
   return (
     <section>
-      <h1>Concurrence</h1>
-      <div>
-        <div>
-          <p
-            onClick={() => {
-              setVisible1(true);
-              setVisible2(false);
-              setVisible3(false);
-              setVisible4(false);
-            }}
-          >
-            Contrôle des concentrations
-          </p>
-          <p
-            onClick={() => {
-              setVisible1(false);
-              setVisible2(true);
-              setVisible3(false);
-              setVisible4(false);
-            }}
-          >
-            Pratiques anti-concurrentielles
-          </p>
-          <p
-            onClick={() => {
-              setVisible1(false);
-              setVisible2(false);
-              setVisible3(true);
-              setVisible4(false);
-            }}
-          >
-            Compliance
-          </p>
-          <p
-            onClick={() => {
-              setVisible1(false);
-              setVisible2(false);
-              setVisible3(false);
-              setVisible4(true);
-            }}
-          >
-            Contentieux
-          </p>
+      <h1 className="title-page-exp">Concurrence</h1>
+      <div className="div-page-exp">
+        <div className="div-left-page-exp">
+          <div className="list-left-exp">
+            <p
+              onClick={() => {
+                setVisible1(true);
+                setVisible2(false);
+                setVisible3(false);
+                setVisible4(false);
+              }}
+            >
+              Contrôle des concentrations
+            </p>
+          </div>
+          <div className="list-left-exp">
+            <p
+              onClick={() => {
+                setVisible1(false);
+                setVisible2(true);
+                setVisible3(false);
+                setVisible4(false);
+              }}
+            >
+              Pratiques anti-concurrentielles
+            </p>
+          </div>
+          <div className="list-left-exp">
+            <p
+              onClick={() => {
+                setVisible1(false);
+                setVisible2(false);
+                setVisible3(true);
+                setVisible4(false);
+              }}
+            >
+              Compliance
+            </p>
+          </div>
+          <div className="list-left-exp">
+            <p
+              onClick={() => {
+                setVisible1(false);
+                setVisible2(false);
+                setVisible3(false);
+                setVisible4(true);
+              }}
+            >
+              Contentieux
+            </p>
+          </div>
         </div>
-        <div>
+        <div className="border-limit"></div>
+        <div className="div-right-list">
           {visible1 && <Controle />}
           {visible2 && <AntiConcu />}
           {visible3 && <Compliance />}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../../assets/css/pageExpertise.css";
 import CivilCommercial from "../../components/Litiges/Civil&Commercial";
 import ContentieuxAssurance from "../../components/Litiges/ContentieuxAssurance";
 import Precontentieux from "../../components/Litiges/Precontentieux";
@@ -15,7 +16,7 @@ const Contentieux = () => {
   const [visible6, setVisible6] = useState(false);
   return (
     <section>
-      <h1>CONTENTIEUX ET RÉSOLUTION DES LITIGES</h1>
+      <h1 className="title-page-exp">CONTENTIEUX ET RÉSOLUTION DES LITIGES</h1>
       <p>
         Devilder Avocats accompagne ses clients dans l’élaboration et
         l’exécution de la meilleure stratégie juridique ou judiciaire à adopter.
@@ -26,9 +27,9 @@ const Contentieux = () => {
         commerciales dans le cadre de procédures classiques ou d’urgence
         (procédures d’heure à heure ou jour fixe).
       </p>
-      <div>
-        <div>
-          <p
+      <div className="div-page-exp">
+        <div className="div-left-page-exp">
+          <div
             onClick={() => {
               setVisible1(true);
               setVisible2(false);
@@ -37,10 +38,11 @@ const Contentieux = () => {
               setVisible5(false);
               setVisible6(false);
             }}
+            className="list-left-exp"
           >
-            Précontentieux et stratégie
-          </p>
-          <p
+            <p>Précontentieux et stratégie</p>
+          </div>
+          <div
             onClick={() => {
               setVisible1(false);
               setVisible2(true);
@@ -49,10 +51,11 @@ const Contentieux = () => {
               setVisible5(false);
               setVisible6(false);
             }}
+            className="list-left-exp"
           >
-            Contentieux civil et commercial
-          </p>
-          <p
+            <p>Contentieux civil et commercial</p>
+          </div>
+          <div
             onClick={() => {
               setVisible1(false);
               setVisible2(false);
@@ -61,10 +64,11 @@ const Contentieux = () => {
               setVisible5(false);
               setVisible6(false);
             }}
+            className="list-left-exp"
           >
-            Contentieux des assurances
-          </p>
-          <p
+            <p>Contentieux des assurances</p>
+          </div>
+          <div
             onClick={() => {
               setVisible1(false);
               setVisible2(false);
@@ -73,10 +77,11 @@ const Contentieux = () => {
               setVisible5(false);
               setVisible6(false);
             }}
+            className="list-left-exp"
           >
-            Contentieux immobilier
-          </p>
-          <p
+            <p>Contentieux immobilier</p>
+          </div>
+          <div
             onClick={() => {
               setVisible1(false);
               setVisible2(false);
@@ -85,10 +90,11 @@ const Contentieux = () => {
               setVisible5(true);
               setVisible6(false);
             }}
+            className="list-left-exp"
           >
-            Contentieux du droit des sociétés
-          </p>
-          <p
+            <p>Contentieux du droit des sociétés</p>
+          </div>
+          <div
             onClick={() => {
               setVisible1(false);
               setVisible2(false);
@@ -97,11 +103,13 @@ const Contentieux = () => {
               setVisible5(false);
               setVisible6(true);
             }}
+            className="list-left-exp"
           >
-            MARD
-          </p>
+            <p>MARD</p>
+          </div>
         </div>
-        <div>
+        <div className="border-limit"></div>
+        <div className="div-right-list">
           {visible1 && <Precontentieux />}
           {visible2 && <CivilCommercial />}
           {visible3 && <ContentieuxAssurance />}

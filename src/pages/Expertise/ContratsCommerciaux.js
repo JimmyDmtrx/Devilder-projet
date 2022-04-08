@@ -16,48 +16,53 @@ const ContratsCommerciaux = () => {
       <h1 className="title-page-exp">Contrats commerciaux</h1>
       <div className="div-page-exp">
         <div className="div-left-page-exp">
-          <p
+          <div
             onClick={() => {
               setVisible1(true);
               setVisible2(false);
               setVisible3(false);
               setVisible4(false);
             }}
+            className="list-left-exp"
           >
-            Rédaction de contrats d'affaires
-          </p>
-          <p
+            <p>Rédaction de contrats d'affaires</p>
+          </div>
+          <div
             onClick={() => {
               setVisible1(false);
               setVisible2(true);
               setVisible3(false);
               setVisible4(false);
             }}
+            className="list-left-exp"
           >
-            Rédaction de contrats IT
-          </p>
-          <p
+            <p>Rédaction de contrats IT</p>
+          </div>
+          <div
             onClick={() => {
               setVisible1(false);
               setVisible2(false);
               setVisible3(true);
               setVisible4(false);
             }}
+            className="list-left-exp"
           >
-            gestion des relations commerciales
-          </p>
-          <p
+            <p>Gestion des relations commerciales</p>
+          </div>
+          <div
             onClick={() => {
               setVisible1(false);
               setVisible2(false);
               setVisible3(false);
               setVisible4(true);
             }}
+            className="list-left-exp"
           >
-            Contentieux commercial
-          </p>
+            <p>Contentieux commercial</p>
+          </div>
         </div>
-        <div>
+        <div className="border-limit"></div>
+        <div className="div-right-list">
           {visible1 && <Contrats />}
           {visible2 && <ContratsIT />}
           {visible3 && <RelationsCommerciales />}

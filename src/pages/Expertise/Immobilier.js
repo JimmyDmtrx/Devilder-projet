@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../../assets/css/pageExpertise.css";
 import BauxCommerciaux from "../../components/Immobilier/BauxCommerciaux";
 import Construction from "../../components/Immobilier/Construction";
 import ContentieuxImmo from "../../components/Immobilier/ContentieuxImmo";
@@ -11,51 +12,56 @@ const Immobilier = () => {
   const [visible4, setVisible4] = useState(false);
   return (
     <section>
-      <h1>IMMOBILIER ET CONSTRUCTION</h1>
-      <div>
-        <div>
-          <p
+      <h1 className="title-page-exp">IMMOBILIER ET CONSTRUCTION</h1>
+      <div className="div-page-exp">
+        <div className="div-left-page-exp">
+          <div
             onClick={() => {
               setVisible1(true);
               setVisible2(false);
               setVisible3(false);
               setVisible4(false);
             }}
+            className="list-left-exp"
           >
-            Baux commerciaux
-          </p>
-          <p
+            <p>Baux commerciaux</p>
+          </div>
+          <div
             onClick={() => {
               setVisible1(false);
               setVisible2(true);
               setVisible3(false);
               setVisible4(false);
             }}
+            className="list-left-exp"
           >
-            Vente immobilière
-          </p>
-          <p
+            <p>Vente immobilière</p>
+          </div>
+          <div
             onClick={() => {
               setVisible1(false);
               setVisible2(false);
               setVisible3(true);
               setVisible4(false);
             }}
+            className="list-left-exp"
           >
-            Construction
-          </p>
-          <p
+            <p>Construction</p>
+          </div>
+          <div
             onClick={() => {
               setVisible1(false);
               setVisible2(false);
               setVisible3(false);
               setVisible4(true);
             }}
+            className="list-left-exp"
           >
-            Contentieux
-          </p>
+            <p>Contentieux</p>
+          </div>
         </div>
-        <div>
+        <div className="border-limit"></div>
+        <div className="div-right-list">
           {visible1 && <BauxCommerciaux />}
           {visible2 && <VenteImmo />}
           {visible3 && <Construction />}

@@ -13,7 +13,6 @@
 }
 .div-page-exp{
     display: flex;
-    border: 2px olive solid;
     height: 60vh;
     
 }
@@ -21,7 +20,37 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 30px;
-    width: 50%;
+    max-height: 300px;
+    max-width:450px;
+    width: 100%;
     background-color: white;
+    
 }
+
+.list-left-exp{
+    height: 100%;
+    width: 100%;
+display: flex;
+align-items: center;
+
+}
+.list-left-exp:hover{
+    background-color: goldenrod;
+    cursor: pointer;
+    
+    }
+    .list-left-exp p {
+        margin-left: 30px;
+        font-weight: 600;
+    }
+    .border-limit{
+        background-color: goldenrod;
+        width: 5px;
+    }
+    .div-right-list{
+        
+        margin-left: 50px;
+        background-color: rgba(213, 164, 42, 0.257);
+    }
+
+    
